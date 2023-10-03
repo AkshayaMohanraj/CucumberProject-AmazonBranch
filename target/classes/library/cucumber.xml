@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="98.406536">
+<testcase classname="End to End test cases for Amazon application" name="User login the applciation and verify user name in the header" time="98.406536">
+<failure message="java.lang.RuntimeException&#13;&#10;&#9;at com.amazon.baseclass.BaseClass.getElementText(BaseClass.java:191)&#13;&#10;&#9;at com.amazon.stepdefinition.Step_definition.user_verify_the_username_Hello_Akshaya_in_the_header_page(Step_definition.java:98)&#13;&#10;&#9;at ✽.Then User verify the username 'Hello, Akshaya' in the header page(AmazonLogin.feature:17)&#13;&#10;"><![CDATA[Given User launch the applciation...........................................passed
+And User wait for '3' seconds...............................................passed
+When User moushover to the Hello sign in....................................passed
+And User wait for '3' seconds...............................................passed
+And User click on sign in button on ajax call...............................passed
+And User enter the username '9486294120' in the emailid/mobile number.......passed
+And User click on continue button...........................................passed
+Then User verify the entered mobile number '+919486294120' displays on the mobile number feild.passed
+When User enter the password '643003' in the password feild.................passed
+And User click on login button..............................................passed
+And User wait for '10' seconds..............................................passed
+Then User verify the username 'Hello, Akshaya' in the header page...........failed
+
+StackTrace:
+java.lang.RuntimeException
+	at com.amazon.baseclass.BaseClass.getElementText(BaseClass.java:191)
+	at com.amazon.stepdefinition.Step_definition.user_verify_the_username_Hello_Akshaya_in_the_header_page(Step_definition.java:98)
+	at ✽.Then User verify the username 'Hello, Akshaya' in the header page(AmazonLogin.feature:17)
+]]></failure>
+</testcase>
+</testsuite>
